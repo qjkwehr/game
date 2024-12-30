@@ -1,0 +1,38 @@
+/* 기본적인 스타일링 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* 게임 캔버스 */
+#gameCanvas {
+    background-color: #87CEEB;
+    border: 2px solid #000;
+    display: block;
+    margin-top: 20px;
+}
+
+/* 반응형 처리 */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #gameCanvas {
+        width: 90%;
+        height: auto;
+    }
+}
